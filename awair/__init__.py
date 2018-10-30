@@ -24,7 +24,7 @@ class Awair:
         return self.devices
 
     def get_score(self, device_type, device_id):
-        return Score(self._api.get(AwairUrls.get_score.format(device_type=device_type, device_id=device_id))['data'][0])
+        return Score(self._api.get(AwairUrls.get_score.format(device_type=device_type.value, device_id=device_id))['data'][0])
 
     def get_timelines(self, device_type, device_id, start_time, end_time):
         params = {

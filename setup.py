@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='awair',
-      version='0.0.1',
+      version='0.0.2',
       description='A python wrapper for Awair private API',
       url='https://github.com/ybbarng/awair',
       auther='ybbarng',
