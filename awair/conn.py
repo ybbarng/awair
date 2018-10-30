@@ -17,7 +17,7 @@ class AwairRequest:
             self.headers['Authorization'] = 'Bearer {}'.format(auth_token)
 
     def get(self, url, data=None):
-        response = self.validate(requests.get(url, data=data, headers=self.headers))
+        response = self.validate(requests.get(url, params=data, headers=self.headers))
         return response.json()
 
     def post(self, url, json_data=None):
