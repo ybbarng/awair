@@ -1,4 +1,4 @@
-from awair.utils import datetime_to_str, str_to_datetime
+from awair.utils import str_to_datetime
 
 
 class User:
