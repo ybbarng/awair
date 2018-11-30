@@ -37,7 +37,6 @@ class Sensor:
         self.temp = json['temp'] # 25.53
         self.humidity = json['humid'] # 38.01
         self.voc = json['voc'] # 521
-        self.pm10 = json['pm10'] # 1
         self.pm25 = json['pm25'] # 0
 
 
