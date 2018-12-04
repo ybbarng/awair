@@ -34,8 +34,8 @@ class Index:
 
 class Sensor:
     def __init__(self, json):
-        self.temp = json['temp'] # 25.53
-        self.humidity = json['humid'] # 38.01
+        self.temp = round(json['temp'], 2) # 25.53
+        self.humidity = round(json['humid'], 2) # 38.01
         self.voc = json['voc'] # 521
         self.pm25 = json['pm25'] # 0
 
